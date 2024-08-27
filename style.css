@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #EFF1FA;
+}
+
+.cabecalho {
+    display: flex;
+    height: 40px;    
+}
+
+.logo {
+    margin: 5px;
+}
+
+.painel__botao {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+}
+
+.painel__entrada__botao {
+    display: flex;
+    flex-direction: column;
+    gap: 250px;   
+}
+
+.painel__entrada {
+    display: flex;
+    padding: 4px;
+    margin: 50px 10px;
+    justify-content: center;
+}
+
+.painel__entrada__texto {
+    display: flex;
+    background-color: #EFF1FA;
+    width: 480px;
+    height: 38px;
+    line-height: 140%;
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    color: #0A3871;
+    border: none;
+}
+
+.botao__e__informativo {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    gap: 10px;
+}
+
+.informativo__texto {
+    color: gray;
+}
+
+.botao__criptografar {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    border-radius: 24px;
+    width: 270px;
+    height: 57px;
+    background-color: #0A3871;
+    color: white;
+}
+
+.botao__descriptografar {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    border-radius: 24px;
+    width: 270px;
+    height: 57px;
+    background-color: #D8DFE8;
+    color: #0A3871 ;
+}
+
+.painel__saida {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.painel__saida__resposta {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    color: #0A3871;
+    width: 380px;
+    height: 470px;
+    border-radius: 32px;
+    padding: 15px;
+    margin: 0 0 5px 0;
+    gap: 30px;
+}
+
+.painel__saida__imagem {
+    width: 350px;
+    height: 270px;
+}
+
+.painel__saida__texto {
+    display: flex;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    color: #000000;
+}
+
+.painel__saida__paragrafo {
+    display: flex;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    color: #000000;
+}
+
+.botao__copiar {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    border-radius: 24px;
+    width: 270px;
+    height: 57px;
+    background-color: #EFF1FA;
+    color: #0A3871 ;
+    position: fixed;
+    top: 470px;
+    left: 76%; 
+    transform: translateX(-50%);
+}
+
+.rodape {
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    background-color: #0A3871;
+    color: white;
+    text-align: center;
+}

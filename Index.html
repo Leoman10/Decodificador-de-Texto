@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador de Texto</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="logo" src="assets/Frame 6.png" alt="Simbolo A">
+    </header>
+    <main class="painel__botao">
+        <section class="painel__entrada__botao">
+            <section class="painel__entrada">
+                <label for="inputEntrada"></label>
+                <input class="painel__entrada__texto" type="text" id="inputEntrada" value="Digite seu texto" onclick="this.value=''" oninput="filtrarMinusculas(this)">
+            </section>
+            <section class="botao__e__informativo">
+                <section class="informativo">  
+                    <p class="informativo__texto">
+                        <img class="exclamacao" src="assets/bi_exclamation-circle-fill.png" alt="Ponto de Exclamação">
+                        Apenas letras minúsculas e sem acento.</p> 
+                </section>
+                <section class="botao">
+                    <button onclick="criptografar ()" class="botao__criptografar" >Criptografar</button>
+                    <button onclick="descriptografar ()" class="botao__descriptografar">Descriptografar</button>
+                </section>
+            </section>
+        </section>
+        <section class="painel__saida">
+            <div class="painel__saida__resposta" id="resultado">
+                <img class="painel__saida__imagem" src="assets/High quality products 1 1.png" alt="Figura ajoelhada segurando uma lupa" id="imagemSaida">
+                <div class="painel__saida__informacao">
+                    <h1 class="painel__saida__texto" id="textoSaida">Nenhuma mensagem encontrada</h1>
+                    <p class="painel__saida__paragrafo" id="paragrafoSaida">Digite um texto que você deseja <br>criptografar ou descriptografar.</p>
+                    <p id="textoCriptografado"></p>
+                </div>
+                <button onclick="copia ()" class="botao__copiar" id="copiar" style="display: none;" >Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="rodape">Criado Por Yuri Raffael.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
